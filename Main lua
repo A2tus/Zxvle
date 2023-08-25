@@ -1,0 +1,54 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+    	Name = "Zxvle",
+        	Content = "Zxvle loaded in 2.4 secs",
+            	Image = "rbxassetid://4483345998",
+                	Time = 2.9
+                    })
+
+local Window = OrionLib:MakeWindow({Name = "Zxvle Private", HidePremium = false, SaveConfig = true, ConfigFolder = "Zxvle Private", IntroEnabled = true, IntroText = "Zxvle Private V1", })
+
+local Tab = Window:MakeTab({
+    	Name = "Blalants",
+        	Icon = "rbxassetid://4483345998",
+            	PremiumOnly = false
+                })
+
+local Section = Tab:AddSection({
+    	Name = "Private"
+        })
+
+wait(2)
+
+OrionLib:MakeNotification({
+	Name = "Module trigged",
+	Content = "Zxvle is in Blatant",
+	Image = "rbxassetid://14564602357",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "Module",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddToggle({
+	Name = "module",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://14564609041",
+	Time = 3
+})
+
+
+OrionLib:Init()
